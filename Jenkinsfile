@@ -58,13 +58,21 @@ pipeline{
         stage('parallel'){
           parallel {
               stage ('one'){
-                  sh 'echo hello stage one'
+              steps{
+                 sh 'echo hello stage one'
+              }
               }
               stage ('two'){
-                  sh 'echo hello stage two'
+              steps{
+                               sh 'echo hello stage two'
+                            }
+
               }
               stage ('three'){
-                  sh 'echo hello stage three'
+              steps{
+                               sh 'echo hello stage three'
+                            }
+
               }
 
           }
