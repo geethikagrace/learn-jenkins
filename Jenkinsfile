@@ -12,7 +12,7 @@ pipeline {
 
   }
 
-  triggers { pollSCM('H/2 * * * *') }
+
 
   options {
     ansiColor('xterm')
