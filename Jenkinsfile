@@ -38,6 +38,7 @@ pipeline {
      steps{
        sh 'env'
      }
+     }
   post{
     always{
        sh  'echo post cleanup step'
