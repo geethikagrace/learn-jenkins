@@ -6,6 +6,11 @@ pipeline {
     label 'workstation'
    }
   }
+
+   parameters {
+          string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+
+  }
   options {
     ansiColor('xterm')
   }
@@ -17,6 +22,7 @@ pipeline {
      steps{
        sh 'echo hello world'
        sh 'echo ${example_url}'
+       sh 'echo person -${PERSON}'
      }
     }
    }
