@@ -60,11 +60,11 @@ pipeline{
               stage ('one'){
                   sh 'echo hello stage one'
               }
-              stage ('one'){
-                  sh 'echo hello stage one'
+              stage ('two'){
+                  sh 'echo hello stage two'
               }
-              stage ('one'){
-                  sh 'echo hello stage one'
+              stage ('three'){
+                  sh 'echo hello stage three'
               }
 
           }
