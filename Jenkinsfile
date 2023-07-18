@@ -22,6 +22,10 @@ pipeline {
   }
   stages{
     stage ('one'){
+    input {
+                    message "Should we approve?"
+                    ok "Yes"
+                    }
      steps{
        sh 'echo hello world'
        sh 'echo ${example_url}'
