@@ -13,7 +13,7 @@ agent {
    stage ('one'){
    steps{
      sh 'echo hello world'
-     sh 'echo ${example_url}
+     sh 'echo ${example_url}'
     }
    }
   }
